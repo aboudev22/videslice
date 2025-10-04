@@ -13,20 +13,16 @@ A browser extension for downloading videos or specific sequences from various pl
 
 - **TypeScript**: For type-safe JavaScript code in the extension's popup, background, and content scripts.
 - **pnpm**: Package manager for fast, efficient dependency handling.
-- **yt-dlp**: Integrated via a Node.js wrapper (e.g., ytdlp-nodejs) for multi-platform video extraction and downloading. Handles thousands of sites like YouTube, Vimeo, etc.
-- **FFmpeg**: Required for on-the-fly video trimming and section extraction (installed separately or bundled where possible).
 - **Browser APIs**: Chrome/Firefox Extension APIs for content injection, permissions, and local storage.
-- **WebAssembly (optional)**: For browser-compatible FFmpeg ports to enable client-side processing without native binaries.
 
 ## Installation
 
-1. Clone the repo: `git clone https://github.com/yourusername/video-sequence-downloader.git`
+1. Clone the repo: `git clone https://github.com/yourusername/vidslice.git`
 2. Install dependencies: `pnpm install`
 3. Build: `pnpm build`
 4. Load in browser:
    - Chrome: Go to `chrome://extensions/`, enable Developer Mode, and load the `dist/` folder.
    - Firefox: Use `about:debugging`, load temporary add-on from `manifest.json`.
-5. Install FFmpeg: Download from [ffmpeg.org](https://ffmpeg.org) and add to PATH (or use a wrapper for auto-setup).
 
 ## Usage
 

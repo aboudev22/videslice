@@ -6,8 +6,8 @@
   "permissions": ["activeTab", "downloads", "storage"],
   "host_permissions": ["<all_urls>"],
   "action": {
-    "default_popup": "dist/popup/popup.html",
-    "default_icon": "icon.png"
+    "default_popup": "./src/popup/index.html",
+    "default_icon": "./images/logo-128.png"
   },
   "icons": {
     "16": "./images/logo-16.png",

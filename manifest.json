@@ -9,6 +9,12 @@
     "default_popup": "dist/popup/popup.html",
     "default_icon": "icon.png"
   },
+  "icons": {
+    "16": "./images/logo-16.png",
+    "48": "./images/logo-48.png",
+    "128": "./images/logo-128.png",
+    "512": "./images/logo-512.png"
+  },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
@@ -16,7 +22,7 @@
     }
   ],
   "background": {
-    "service_worker": "dist/background/background.js"
+    "scripts": ["./dist/index.js"]
   },
   "options_page": "dist/popup/popup.html"
 }
